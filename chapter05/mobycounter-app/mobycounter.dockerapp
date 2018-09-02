@@ -1,0 +1,31 @@
+version: latest
+name: mobycounter
+description: An example Docker App file which packages up the Moby Counter application
+namespace: masteringdockerthirdedition
+maintainers:
+  - name: Russ McKendrick
+    email: russ@mckendrick.io
+
+---
+version: "3.6"
+
+services:
+   redis:
+     image: redis:alpine
+     volumes:
+       - redis_data:/data
+     restart: always
+   mobycounter:
+     depends_on:
+       - redis
+     image: russmckendrick/moby-counter
+     ports:
+       - "${port}:80"
+     restart: always
+
+volumes:
+    redis_data:
+
+---
+
+{ "port":"8080" }

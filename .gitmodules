@@ -1,0 +1,3 @@
+[submodule "chapter05/example-voting-app"]
+	path = chapter05/example-voting-app
+	url = https://github.com/dockersamples/example-voting-app.git
