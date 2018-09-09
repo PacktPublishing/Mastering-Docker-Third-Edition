@@ -1,3 +1,12 @@
 [submodule "chapter05/example-voting-app"]
 	path = chapter05/example-voting-app
 	url = https://github.com/dockersamples/example-voting-app.git
+[submodule "chapter06/windows-docker-machine"]
+	path = chapter06/windows-docker-machine
+	url = git@github.com:StefanScherer/windows-docker-machine.git
+[submodule "chapter06/dotnet-musicstore"]
+	path = chapter06/dotnet-musicstore
+	url = git@github.com:dockersamples/dotnet-musicstore.git
+[submodule "chapter06/dotnet-album-viewer"]
+	path = chapter06/dotnet-album-viewer
+	url = git@github.com:dockersamples/dotnet-album-viewer.git
