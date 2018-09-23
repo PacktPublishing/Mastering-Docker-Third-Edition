@@ -8,6 +8,3 @@ services:
       replicas: 6
       restart_policy:
         condition: on-failure
-      placement:
-        constraints:
-          - node.role == worker
